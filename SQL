@@ -1,0 +1,7 @@
+CREATE TABLE votes (
+    id SERIAL PRIMARY KEY,
+    candidate_name VARCHAR(255) NOT NULL,
+    voter_id VARCHAR(255) NOT NULL,
+    vote_hash VARCHAR(255) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
